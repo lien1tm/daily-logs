@@ -23,26 +23,20 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: 🔧 Configure Git Bot Identity
+    - name: Configure Git
       run: |
         git config --global user.name "blogecoin"
-        git config --global user.email "blogecoin@github-bot.ai"
+        git config --global user.email "blogecoin@users.noreply.github.com"
 
-    - name: 📊 Generate Log Entry
+    - name: Create log
       run: |
-        echo "Autonomous update at $(date -u '+%Y-%m-%d %H:%M:%S') UTC" >> autonomous_logs.txt
+        echo "Autonomous update at $(date -u)" >> autonomous_logs.txt
 
-    - name: 🤖 Commit & Push
+    - name: Commit and push
       run: |
         git add autonomous_logs.txt
-        if ! git diff --staged --quiet; then
-          TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
-          git commit -m "autonomous update $TIMESTAMP"
-          git push origin main
-          echo "Commit completed at $(date -u)"
-        else
-          echo "No changes to commit"
-        fi
+        git commit -m "autonomous update $(date -u +%Y%m%d_%H%M%S)" || echo "Nothing to commit"
+        git push || echo "Push failed"
 
     - name: 📋 Bot Status Report
       run: |
