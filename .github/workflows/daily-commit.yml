@@ -16,6 +16,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
 
     - name: 🐍 Setup Python Environment
       uses: actions/setup-python@v4
@@ -36,16 +37,16 @@ jobs:
         git add .
         if ! git diff --staged --quiet; then
           TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
-          git commit -m "🤖 autonomous update $TIMESTAMP"
+          git commit -m "autonomous update $TIMESTAMP"
           git push origin main
-          echo "✅ Autonomous commit completed at $(date -u)"
+          echo "Autonomous commit completed at $(date -u)"
         else
-          echo "ℹ️ No changes to commit"
+          echo "No changes to commit"
         fi
 
     - name: 📋 Bot Status Report
       run: |
-        echo "🤖 Bot Status: Active"
-        echo "📅 Last Run: $(date -u)"
-        echo "🔗 Repository: ${{ github.repository }}"
-        echo "✅ Autonomous operation successful"
+        echo "Bot Status: Active"
+        echo "Last Run: $(date -u)"
+        echo "Repository: ${{ github.repository }}"
+        echo "Autonomous operation successful"
