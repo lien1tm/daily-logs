@@ -28,18 +28,18 @@ jobs:
         git config --global user.name "blogecoin"
         git config --global user.email "blogecoin@github-bot.ai"
 
-    - name: 📊 Generate Autonomous Log Entry
+    - name: 📊 Generate Log Entry
       run: |
-        python autonomous_bot.py
+        echo "Autonomous update at $(date -u '+%Y-%m-%d %H:%M:%S') UTC" >> autonomous_logs.txt
 
-    - name: 🤖 Autonomous Commit & Push
+    - name: 🤖 Commit & Push
       run: |
-        git add .
+        git add autonomous_logs.txt
         if ! git diff --staged --quiet; then
           TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
           git commit -m "autonomous update $TIMESTAMP"
           git push origin main
-          echo "Autonomous commit completed at $(date -u)"
+          echo "Commit completed at $(date -u)"
         else
           echo "No changes to commit"
         fi
