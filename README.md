@@ -2,7 +2,7 @@
 
 **100% Tự động - Không cần can thiệp người dùng**
 
-[![🤖 Autonomous Daily Logs Bot](https://github.com/duyentinh188/daily-logs/actions/workflows/daily-commit.yml/badge.svg)](https://github.com/duyentinh188/daily-logs/actions/workflows/daily-commit.yml)
+[![🤖 Autonomous Daily Logs Bot](https://github.com/Gynzrt/daily-logs/actions/workflows/daily-commit.yml/badge.svg)](https://github.com/Gynzrt/daily-logs/actions/workflows/daily-commit.yml)
 
 ## 🎯 Tính năng chính
 
@@ -48,7 +48,7 @@ auto-daily-logs/
 
 ### 2. Push code lên GitHub
 ```bash
-git remote add origin git@github.com:duyentinh188/auto-daily-logs.git
+git remote add origin git@github.com:Gynzrt/auto-daily-logs.git
 git add .
 git commit -m "🤖 Initial autonomous bot setup"
 git push -u origin main
