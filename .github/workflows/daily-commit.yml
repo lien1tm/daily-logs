@@ -25,8 +25,8 @@ jobs:
 
     - name: Configure Git
       run: |
-        git config --global user.name "blogecoin"
-        git config --global user.email "blogecoin@users.noreply.github.com"
+        git config --global user.name "duyentinh188"
+        git config --global user.email "duyentinh188@users.noreply.github.com"
 
     - name: Create log
       run: |
