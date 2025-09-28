@@ -2,7 +2,7 @@
 
 **100% Tự động - Không cần can thiệp người dùng**
 
-[![🤖 Autonomous Daily Logs Bot](https://github.com/duyentinh188/auto-daily-logs/actions/workflows/daily-commit.yml/badge.svg)](https://github.com/duyentinh188/auto-daily-logs/actions/workflows/daily-commit.yml)
+[![🤖 Autonomous Daily Logs Bot](https://github.com/duyentinh188/daily-logs/actions/workflows/daily-commit.yml/badge.svg)](https://github.com/duyentinh188/daily-logs/actions/workflows/daily-commit.yml)
 
 ## 🎯 Tính năng chính
 
@@ -141,4 +141,4 @@ git push -u origin main
 
 ---
 
-**🤖 Bot này chạy hoàn toàn tự động - chỉ cần tạo repository và push code lần đầu!**
+**🤖 Bot này chạy hoàn toàn tự động - upgrade từ phiên bản cũ!**
