@@ -2,7 +2,7 @@
 
 **100% Tự động - Không cần can thiệp người dùng**
 
-[![🤖 Autonomous Daily Logs Bot](https://github.com/Gynzrt/daily-logs/actions/workflows/daily-commit.yml/badge.svg)](https://github.com/Gynzrt/daily-logs/actions/workflows/daily-commit.yml)
+[![🤖 Autonomous Daily Logs Bot](https://github.com/lien1tm/daily-logs/actions/workflows/daily-commit.yml/badge.svg)](https://github.com/lien1tm/daily-logs/actions/workflows/daily-commit.yml)
 
 ## 🎯 Tính năng chính
 
@@ -48,7 +48,7 @@ auto-daily-logs/
 
 ### 2. Push code lên GitHub
 ```bash
-git remote add origin git@github.com:Gynzrt/auto-daily-logs.git
+git remote add origin git@github.com:lien1tm/daily-logs.git
 git add .
 git commit -m "🤖 Initial autonomous bot setup"
 git push -u origin main
@@ -66,7 +66,7 @@ git push -u origin main
 1. 🤖 **Bot khởi động tự động**
    - GitHub Actions trigger workflow
    - Setup Python environment
-   - Configure Git với user "blogecoin"
+   - Configure Git với user "lien1tm"
 
 2. 📝 **Cập nhật logs**
    ```
@@ -99,7 +99,7 @@ git push -u origin main
 ### **bot_config.json:**
 ```json
 {
-  "bot_name": "blogecoin Bot",
+  "bot_name": "lien1tm Bot",
   "enabled": true,
   "log_format": "🤖 Autonomous update at {timestamp} UTC",
   "commit_format": "🤖 autonomous update {timestamp}"
@@ -133,7 +133,7 @@ git push -u origin main
 
 ## 📈 Features nâng cao
 
-- 🤖 **Bot branding** với user "blogecoin"
+- 🤖 **Bot branding** với user "lien1tm"
 - 📊 **Uptime tracking** tự động
 - 🔄 **Error recovery** tự động
 - 📋 **Status monitoring** real-time
